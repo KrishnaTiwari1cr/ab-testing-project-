@@ -138,4 +138,26 @@ The observed variation is likely due to random chance rather than a genuine impr
 
 ---
 
-## 📁 Project Structure
+
+---
+
+## 🧠 Skills Demonstrated
+
+- A/B Testing and Experimental Design  
+- Hypothesis Testing  
+- Statistical Significance and Power Analysis  
+- Data Cleaning and Validation  
+- Business Decision-Making  
+
+---
+
+## 📣 Relevance
+
+A/B testing is a core competency for data analysts and product analysts.  
+This project demonstrates the ability to translate statistical results into clear, business-oriented decisions.
+
+---
+
+## ⭐ Acknowledgment
+
+If you found this project useful, feel free to star the repository or connect with me on LinkedIn.
