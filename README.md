@@ -117,11 +117,7 @@ Low power → experiment may not detect small effects reliably
 
 ---
 
-## 📁 Project Structure
-ab-testing-project/
-│── notebook.ipynb
-│── ab_data.csv
-│── README.md
+
 
 
 
