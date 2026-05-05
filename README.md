@@ -1,17 +1,37 @@
 # 🚀 A/B Testing Analysis: Landing Page Conversion Optimization
 
-## 🎯 Problem Statement
-Can a new landing page improve user conversion rates compared to the existing one?
+## 📊 Key Result (TL;DR)
 
-This project evaluates both **statistical significance** and **practical business impact** to support a real-world product decision.
+The new landing page achieved a **conversion rate of 11.88%**, compared to **12.04%** for the existing page.
+
+- 📉 Absolute change: **-0.16 percentage points**
+- 🧪 P-value: **0.1897** (not statistically significant)
+- 📉 Effect size: **negligible**
+
+👉 **Final Decision: Do NOT roll out the new landing page**
+
+---
+
+## 🎯 Problem Statement
+
+Can a new landing page improve user conversion rates?
+
+This project evaluates:
+- Statistical significance (Is the result real?)
+- Practical significance (Does it actually matter?)
 
 ---
 
 ## 🧠 Business Context
-A/B testing is widely used by product and growth teams to validate changes before rollout.
 
-👉 Key Question:
-**Should the company roll out the new landing page?**
+A/B testing is widely used in product and growth teams to validate changes before rollout.
+
+Even small changes in conversion rate can:
+- Impact revenue  
+- Affect user engagement  
+- Influence product decisions  
+
+👉 Goal: **Make a data-driven decision under uncertainty**
 
 ---
 
@@ -26,26 +46,35 @@ A/B testing is widely used by product and growth teams to validate changes befor
 
 ---
 
-## 🧹 Data Validation (Critical Step)
+## 🧹 Data Validation
 
-- Removed mismatched users where:
-  - Control group saw new page  
-  - Treatment group saw old page  
+Real-world issue detected:
 
-✅ Ensured valid A/B test setup
+- Control users seeing new page  
+- Treatment users seeing old page  
+
+✅ These mismatches were removed to ensure experiment validity.
 
 ---
 
-## 📈 Conversion Rate Analysis (KEY METRIC)
+## 📈 Conversion Rate Analysis
 
 | Group       | Conversion Rate |
 |------------|----------------|
 | Control    | **12.04%** |
 | Treatment  | **11.88%** |
 
-📌 **Absolute Difference (Lift): -0.16 percentage points**
+📌 **Absolute Lift: -0.16%**
 
-👉 The new landing page performs slightly worse than the old page.
+👉 The new page performs slightly worse than the old page.
+
+---
+
+## 📊 Visualization
+
+### Conversion Rate Comparison
+
+![Conversion Rate](https://github.com/KrishnaTiwari1cr/ab-testing-project-/blob/main/Coversion_Rate.png?raw=true)
 
 ---
 
@@ -55,7 +84,7 @@ A/B testing is widely used by product and growth teams to validate changes befor
 - **P-value: 0.1897**
 
 📌 Interpretation:  
-Since **p > 0.05**, the result is **not statistically significant**
+No statistically significant difference (**p > 0.05**)
 
 ---
 
@@ -64,7 +93,7 @@ Since **p > 0.05**, the result is **not statistically significant**
 - **Cohen’s h: -0.0049**
 
 📌 Interpretation:  
-Negligible difference → no meaningful business impact
+Negligible → no meaningful business impact
 
 ---
 
@@ -77,33 +106,34 @@ Low power → experiment may not detect small effects reliably
 
 ---
 
-## 📊 Visualization Insight
+## 💰 Business Impact
 
-- 95% confidence intervals **overlap significantly**
-- Indicates **high uncertainty in difference**
+Even a **0.16% drop in conversion rate** can result in significant losses at scale.
+
+👉 Rolling out the new page could negatively impact overall performance.
 
 ---
 
-## 🧾 Final Decision
+## 🧾 Final Recommendation
 
 ### ❌ Do NOT roll out the new landing page
 
-### Reasoning:
-- Conversion rate is lower (**11.88% vs 12.04%**)  
+### Reason:
+- Lower conversion rate (**11.88% vs 12.04%**)  
 - No statistical significance  
 - Negligible effect size  
 - Weak and unreliable difference  
 
-📌 The observed change is likely due to random variation.
+📌 The observed difference is likely due to random variation.
 
 ---
 
-## 💡 Key Takeaways
+## 🧠 Key Learnings
 
 - Statistical significance ≠ business impact  
-- Conversion rate difference must be meaningful, not just measurable  
-- Data quality issues can affect experiment validity  
-- Not every experiment leads to a rollout decision  
+- Effect size matters more than p-value alone  
+- Data validation is critical in experiments  
+- Not all experiments lead to rollout decisions  
 
 ---
 
@@ -117,20 +147,4 @@ Low power → experiment may not detect small effects reliably
 
 ---
 
-
-
-
-
-## 📣 Why This Project Matters
-
-A/B testing is one of the most common real-world tasks for data analysts.
-
-This project demonstrates:
-- End-to-end experiment analysis  
-- Statistical reasoning  
-- Business decision-making  
-
----
-
-## ⭐ If you found this useful
-Feel free to star ⭐ the repo or connect with me on LinkedIn
+## 📁 Project Structure
