@@ -1,37 +1,28 @@
-# 🚀 A/B Testing Analysis: Landing Page Conversion Optimization
+# A/B Testing Analysis: Landing Page Conversion Optimization
 
-## 📊 Key Result (TL;DR)
+## 📊 Executive Summary
 
 The new landing page achieved a **conversion rate of 11.88%**, compared to **12.04%** for the existing page.
 
-- 📉 Absolute change: **-0.16 percentage points**
-- 🧪 P-value: **0.1897** (not statistically significant)
-- 📉 Effect size: **negligible**
+- Absolute change: **-0.16 percentage points**
+- P-value: **0.1897** (not statistically significant)
+- Effect size: **negligible**
 
-👉 **Final Decision: Do NOT roll out the new landing page**
+**Conclusion:** The new landing page does not improve performance and should not be rolled out.
 
 ---
 
-## 🎯 Problem Statement
+## 🎯 Objective
 
-Can a new landing page improve user conversion rates?
-
-This project evaluates:
-- Statistical significance (Is the result real?)
-- Practical significance (Does it actually matter?)
+To determine whether a newly designed landing page leads to a statistically and practically significant improvement in user conversion rate.
 
 ---
 
 ## 🧠 Business Context
 
-A/B testing is widely used in product and growth teams to validate changes before rollout.
+A/B testing is a critical decision-making tool in product and growth teams. Even small changes in conversion rates can significantly impact revenue and user engagement at scale.
 
-Even small changes in conversion rate can:
-- Impact revenue  
-- Affect user engagement  
-- Influence product decisions  
-
-👉 Goal: **Make a data-driven decision under uncertainty**
+This analysis aims to ensure that any product change is both **statistically valid** and **business-relevant** before deployment.
 
 ---
 
@@ -48,12 +39,12 @@ Even small changes in conversion rate can:
 
 ## 🧹 Data Validation
 
-Real-world issue detected:
+During data inspection, inconsistencies were identified:
 
-- Control users seeing new page  
-- Treatment users seeing old page  
+- Users in the control group exposed to the new page  
+- Users in the treatment group exposed to the old page  
 
-✅ These mismatches were removed to ensure experiment validity.
+These records were removed to preserve the integrity of the experiment.
 
 ---
 
@@ -64,9 +55,9 @@ Real-world issue detected:
 | Control    | **12.04%** |
 | Treatment  | **11.88%** |
 
-📌 **Absolute Lift: -0.16%**
+**Absolute difference:** -0.16 percentage points
 
-👉 The new page performs slightly worse than the old page.
+The treatment group shows a slightly lower conversion rate compared to the control group.
 
 ---
 
@@ -78,66 +69,66 @@ Real-world issue detected:
 
 ---
 
-## 🧪 Statistical Testing
+## 🧪 Statistical Analysis
 
-- Test: Two-proportion Z-test  
-- **P-value: 0.1897**
+- Method: Two-proportion Z-test  
+- P-value: **0.1897**
 
-📌 Interpretation:  
-No statistically significant difference (**p > 0.05**)
+**Interpretation:**  
+The observed difference is not statistically significant at the 5% significance level.
 
 ---
 
-## 📉 Effect Size (Practical Impact)
+## 📉 Effect Size (Practical Significance)
 
-- **Cohen’s h: -0.0049**
+- Cohen’s h: **-0.0049**
 
-📌 Interpretation:  
-Negligible → no meaningful business impact
+**Interpretation:**  
+The difference between groups is negligible and does not represent a meaningful practical impact.
 
 ---
 
 ## ⚡ Statistical Power
 
-- **Power: 0.2588**
+- Power: **0.2588**
 
-📌 Interpretation:  
-Low power → experiment may not detect small effects reliably
+**Interpretation:**  
+The test has low statistical power, indicating limited ability to detect small differences.
 
 ---
 
 ## 💰 Business Impact
 
-Even a **0.16% drop in conversion rate** can result in significant losses at scale.
+A decrease of **0.16 percentage points** in conversion rate can result in substantial performance loss at scale.
 
-👉 Rolling out the new page could negatively impact overall performance.
+Rolling out the new page could negatively impact key business metrics.
 
 ---
 
 ## 🧾 Final Recommendation
 
-### ❌ Do NOT roll out the new landing page
+**Do not implement the new landing page.**
 
-### Reason:
-- Lower conversion rate (**11.88% vs 12.04%**)  
+### Rationale:
+- Lower observed conversion rate  
 - No statistical significance  
 - Negligible effect size  
-- Weak and unreliable difference  
+- High uncertainty in results  
 
-📌 The observed difference is likely due to random variation.
-
----
-
-## 🧠 Key Learnings
-
-- Statistical significance ≠ business impact  
-- Effect size matters more than p-value alone  
-- Data validation is critical in experiments  
-- Not all experiments lead to rollout decisions  
+The observed variation is likely due to random chance rather than a genuine improvement.
 
 ---
 
-## 🛠 Tech Stack
+## 🧠 Key Insights
+
+- Statistical significance alone is insufficient; practical impact must be considered  
+- Effect size is essential for interpreting real-world relevance  
+- Data validation is critical for maintaining experimental integrity  
+- Not all experiments lead to actionable changes  
+
+---
+
+## 🛠 Tools and Technologies
 
 - Python  
 - Pandas  
